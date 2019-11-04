@@ -36,7 +36,6 @@ function checkForMatch(){
       };
 }}
 
-
 function flipCard(cardID){
   cardsInPlay.push(cards[cardID].rank);
   console.log(cards[cardID].suit);
@@ -45,3 +44,15 @@ function flipCard(cardID){
 checkForMatch();
 
   }
+
+
+  function createBoard () {
+    for (let i = 0; i < cards.length; i++){
+      var cardElement = document.createElement('img');
+      var newcardElement = document.setAttribute('src','images/back.png');
+      // var cardElement = document.getElement(cards[i]).setAttribute('data-id',  i);
+      // cardElement.click(flipCard());
+    }
+  }
+
+  createBoard();
